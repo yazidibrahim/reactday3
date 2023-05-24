@@ -4,6 +4,7 @@ import Card from 'react-bootstrap/Card';
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
+import './card.css'
 export default function() {
   let districts=[
     {
@@ -94,7 +95,7 @@ export default function() {
 
 ]
   return (
-  <div style={{backgroundColor:'black'}}>
+  <div className='bc'>
     <Container><br></br><br></br>
       <h1><div style={{textAlign:'center',color:'white'}}>KERALA DISTRICTS</div></h1>
     <Row>
