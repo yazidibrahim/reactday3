@@ -97,7 +97,7 @@ export default function() {
   return (
   <div className='bc'>
     <Container><br></br><br></br>
-      <h1><div style={{textAlign:'center',color:'white'}}>KERALA DISTRICTS</div></h1>
+      <h1><div style={{textAlign:'center',color:'white'}} className='font'>KERALA DISTRICTS</div></h1>
     <Row>
       {
         districts.map((district,index) => { 
@@ -105,7 +105,7 @@ export default function() {
             <Col className='mt-5' sm={3} key={index}>
             <Card style={{ width: '18rem',height:'25rem'}}>
             <Card.Img style={{height:'10rem'}} variant="top" src={district.image}/>
-            <Card.Body style={{height:'13rem', width: '18rem',color:'black',backgroundColor:'silver'}}>
+            <Card.Body style={{height:'13rem', width: '18rem',color:'black',backgroundColor:'lightgray'}}>
               <Card.Title>{district.title}</Card.Title>
               <Card.Text style={{height:'3rem'}}>{district.description}</Card.Text>
               <div className='text-center'><Button className='mt-5' variant="primary">show more</Button></div>
@@ -116,6 +116,6 @@ export default function() {
         )
         }
         </Row>
-        </Container>
+        </Container><br></br>
         </div>
         )}
